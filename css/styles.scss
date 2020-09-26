@@ -1,0 +1,50 @@
+$red:#BF003C;
+$black: #1F1F1F;
+$white: #EFEFEF;
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    min-width: 100vw;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+header,
+footer {
+    min-height: 10vh;
+}
+
+header {
+    border-bottom: 1px solid $red;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    min-width: 100vw;
+    min-height: 80vh;
+}
+
+article {
+    min-width: 85vw;
+}
+
+aside {
+    min-width: 15vw;
+}
+
+@media only screen and (max-device-width: 320px) {
+    main {
+        flex-direction: column;
+    }
+    article,
+    aside {
+        min-width: 100vw;
+        border: 1px sold $red;
+    }
+}

@@ -8,45 +8,56 @@
   <meta name="author" content="TheFLuxApex">
 
   <link rel="stylesheet" href="css/styles.css?v=1.0">
-<style>
-  * {
-   box-sizing: border-box; 
-  }
-  body {
-    margin: 0;
-  }
-  #main {
-    display: flex;
-    min-height: calc(100vh - 40vh);
-  }
-  #main > article {
-    flex: 1;
-  }
-  #main > nav, 
-  #main > aside {
-    flex: 0 0 20vw;
-    background: beige;
-  }
-  #main > nav {
-    order: -1;
-  }
-  header, footer, article, nav, aside {
-    padding: 1em;
-  }
-  header, footer {
-    background: yellowgreen;
-    height: 20vh;
-  }
-</style>
+  <style>
+    * {
+      box-sizing: border-box; 
+    }
+    body {
+      display: flex;
+      min-height: 100vh;
+      flex-direction: row;
+      margin: 0;
+    }
+    .col-1 {
+      background: #D7E8D4;
+      flex: 1;
+    }
+    .col-2 {
+      display: flex;
+      flex-direction: column;
+      flex: 5;
+    }
+    .content {
+      display: flex;
+      flex-direction: row;
+    }
+    .content > article {
+      flex: 3;
+      min-height: 60vh;
+    }
+    .content > aside {
+      background: beige;
+      flex: 1;
+    }
+    header, footer {
+      background: yellowgreen;
+      height: 20vh;
+    }
+    header, footer, article, nav, aside {
+      padding: 1em;
+    }
+  </style>
 
 </head>
 
 <body>
-  <header>Header</header>
-  <div id="main">
+  <nav class="col-1">Nav</nav>
+  <div class="col-2">
+  	<header>Header</header>
+    <main class="content">
     <article>Article</article>
-    <nav>Nav</nav>
     <aside>Aside</aside>
+    </main>
+  	<footer>Footer</footer>
   </div>
-  <footer>Footer</footer>
 </body>

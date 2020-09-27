@@ -1,5 +1,12 @@
-* {
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth; }
 
 body {
   display: flex;
@@ -7,34 +14,45 @@ body {
   min-width: 100vw;
   flex-direction: column;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-size: 62.5%;
+  font-family: 'Titillium Web', sans-serif; }
 
 header,
 footer {
-  min-height: 10vh; }
+  display: flex;
+  min-height: 15vh;
+  background-color: #1F1F1F;
+  color: #EFEFEF; }
 
 header {
-  border-bottom: 1px solid #BF003C; }
+  box-shadow: 0px 1px #2F2F2F, 0px 2px #4F4F4F, 0px 3px #6F6F6F, 0px 4px #8F8F8F, 0px 5px #AFAFAF, 0px 6px #CFCFCF, 0px 7px #EFEFEF, inset 0px -1px #2F2F2F, inset 0px -2px #4F4F4F, inset 0px -3px #6F6F6F, inset 0px -4px #8F8F8F, inset 0px -5px #AFAFAF, inset 0px -6px #CFCFCF, inset 0px -7px #EFEFEF; }
+
+footer {
+  box-shadow: 0px -1px #2F2F2F, 0px -2px #4F4F4F, 0px -3px #6F6F6F, 0px -4px #8F8F8F, 0px -5px #AFAFAF, 0px -6px #CFCFCF, 0px -7px #EFEFEF, inset 0px 1px #2F2F2F, inset 0px 2px #4F4F4F, inset 0px 3px #6F6F6F, inset 0px 4px #8F8F8F, inset 0px 5px #AFAFAF, inset 0px 6px #CFEFCF, inset 0px 7px #EFEFEF; }
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  font-size: 1.8rem; }
 
 main {
   display: flex;
   flex-direction: row;
   min-width: 100vw;
-  min-height: 80vh; }
+  min-height: 70vh;
+  font-size: 1.6rem; }
 
 article {
-  min-width: 85vw; }
+  padding: 8px;
+  min-width: 100vw; }
 
-aside {
-  min-width: 15vw; }
-
-@media only screen and (max-device-width: 320px) {
-  main {
-    flex-direction: column; }
-
-  article,
-  aside {
-    min-width: 100vw;
-    border: 1px sold #BF003C; } }
+/* Custom, iPhone Retina */
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+/* Medium Devices, Desktops */
+/* Large Devices, Wide Screens */
 
 /*# sourceMappingURL=styles.css.map */

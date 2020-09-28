@@ -29,6 +29,11 @@ footer {
   color: #EFEFEF;
 }
 
+.header,
+.banner {
+  display: none;
+}
+
 header {
   background-image: url("../../media/images/faa_banner.png");
   background-size: contain;

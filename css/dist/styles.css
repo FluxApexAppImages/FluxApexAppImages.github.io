@@ -29,8 +29,7 @@ footer {
   color: #EFEFEF;
 }
 
-.header,
-.banner {
+.init_hidden {
   display: none;
 }
 

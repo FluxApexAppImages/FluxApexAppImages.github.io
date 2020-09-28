@@ -33,19 +33,11 @@ footer {
 }
 
 header {
+    background-image: url('../../media/images/faa_banner.png');
+    background-size: contain;
+    background-repeat: no-repeat;
     box-shadow: 0px 1px #2F2F2F, 0px 2px #4F4F4F, 0px 3px #6F6F6F, 0px 4px #8F8F8F, 0px 5px #AFAFAF, 0px 6px #CFCFCF, 0px 7px #EFEFEF, inset 0px -1px #2F2F2F, inset 0px -2px #4F4F4F, inset 0px -3px #6F6F6F, inset 0px -4px #8F8F8F, inset 0px -5px #AFAFAF, inset 0px -6px #CFCFCF, inset 0px -7px #EFEFEF;
 }
-
-// header {
-//     box-shadow:   0px 1px #2F2F2F, 0px 2px #4F4F4F
-//                 , 0px 3px #6F6F6F, 0px 4px #8F8F8F
-//                 , 0px 5px #AFAFAF, 0px 6px #CFCFCF
-//                 , 0px 7px #EFEFEF
-//                 , inset 0px -1px #EFEFEF, inset 0px -2px #CFCFCF
-//                 , inset 0px -3px #AFAFAF, inset 0px -4px #8F8F8F
-//                 , inset 0px -5px #6F6F6F, inset 0px -6px #4F4F4F
-//                 , inset 0px -7px #2F2F2F;
-// }
 footer {
     box-shadow: 0px -1px #2F2F2F, 0px -2px #4F4F4F, 0px -3px #6F6F6F, 0px -4px #8F8F8F, 0px -5px #AFAFAF, 0px -6px #CFCFCF, 0px -7px #EFEFEF, inset 0px 1px #2F2F2F, inset 0px 2px #4F4F4F, inset 0px 3px #6F6F6F, inset 0px 4px #8F8F8F, inset 0px 5px #AFAFAF, inset 0px 6px #CFEFCF, inset 0px 7px #EFEFEF;
 }

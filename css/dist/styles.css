@@ -1,0 +1,68 @@
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  min-width: 100vw;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+header,
+footer {
+  display: flex;
+  min-height: 15vh;
+  background-color: #1F1F1F;
+  color: #EFEFEF;
+}
+
+header {
+  background-image: url("../../media/images/faa_banner.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  box-shadow: 0px 1px #2F2F2F, 0px 2px #4F4F4F, 0px 3px #6F6F6F, 0px 4px #8F8F8F, 0px 5px #AFAFAF, 0px 6px #CFCFCF, 0px 7px #EFEFEF, inset 0px -1px #2F2F2F, inset 0px -2px #4F4F4F, inset 0px -3px #6F6F6F, inset 0px -4px #8F8F8F, inset 0px -5px #AFAFAF, inset 0px -6px #CFCFCF, inset 0px -7px #EFEFEF;
+}
+
+footer {
+  box-shadow: 0px -1px #2F2F2F, 0px -2px #4F4F4F, 0px -3px #6F6F6F, 0px -4px #8F8F8F, 0px -5px #AFAFAF, 0px -6px #CFCFCF, 0px -7px #EFEFEF, inset 0px 1px #2F2F2F, inset 0px 2px #4F4F4F, inset 0px 3px #6F6F6F, inset 0px 4px #8F8F8F, inset 0px 5px #AFAFAF, inset 0px 6px #CFEFCF, inset 0px 7px #EFEFEF;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  font-size: 1.8rem;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  min-width: 100vw;
+  min-height: 70vh;
+  font-size: 1.6rem;
+}
+
+article {
+  padding: 8px;
+  min-width: 100vw;
+}
+
+/* Custom, iPhone Retina */
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+/* Medium Devices, Desktops */
+/* Large Devices, Wide Screens */
